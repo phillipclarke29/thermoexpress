@@ -8,7 +8,7 @@ As user I want to be able to turn on a power saving mode to save money
 
 ###  Getting Started
 
-Run the server using node app.js at root - thermostat is at localhost:3000
+Run the server using node app.js at root - thermostat is at localhost:3000 or by going to https://stark-everglades-2999.herokuapp.com/
 
 Jasmine tests can be run from the command line at root using open SpecRunner.html
 
