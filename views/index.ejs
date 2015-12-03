@@ -33,26 +33,28 @@
     </div>
   </div>
 
-  <div style="text-align: center" >
-    <h2> Thermostat </h2>
-    <h3> (Centrigrade) </h3>
-    <h1 id = 'output'>links </h1>
-    <br>
-    <br>
-    <input id = 'temp_up' type='submit' class='btn btn-success'  value='Temperature Up'>
+  <div style="text-align: center">
+    <div ng-controller="ThermostatController as Thermo">
+      <h2> Thermostat </h2>
+      <h3> (Centrigrade) </h3>
+      <h1 id = 'output'>{{links}}</h1>
+      <br>
+      <br>
+      <input id = 'temp_up' type='submit' class='btn btn-success'  value='Temperature Up'>
 
-    <input id = 'temp_down' type='submit' class='btn btn-danger' value='Temperature Down'>
-    <div class="checkbox">
-      <label><input type="checkbox" id = 'powerSave' value="checked" checked>Power Saving Mode</label>
+      <input id = 'temp_down' type='submit' class='btn btn-danger' value='Temperature Down' >
+      <div class="checkbox">
+        <label><input type="checkbox" id = 'powerSave' value="checked" checked>Power Saving Mode</label>
+        <br>
+        <br>
+        <input id = 'reset' type='submit' class='btn btn-warning' value='Reset'>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+      </div>
       <br>
       <br>
-      <input id = 'reset' type='submit' class='btn btn-warning' value='Reset'>
-      <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-    </div>
-    <br>
-    <br>
-    <div style="text-align: center" >
-      <h4 id = 'errors'> No Errors</h4>
+      <div style="text-align: center" >
+        <h4 id = 'errors'> No Errors</h4>
+      </div>
     </div>
   </div>
 </body>

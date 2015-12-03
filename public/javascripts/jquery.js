@@ -15,6 +15,7 @@ $(document).ready(function()
     $('#temp_up').click(function() {
       try {
         therm.increaseByOne();
+        console.log(therm.temp);
         displayTemp();
       } catch (e) {
         errorMessage = e.message;
