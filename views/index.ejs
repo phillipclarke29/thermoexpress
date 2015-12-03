@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css'>
+  <link href="stylesheets/custom.css" rel="stylesheet">
+  <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
+  <script src='/javascripts/jquery.js'></script>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+  <script src='javascripts/thermostat.js'></script>
+
+<title>Thermostat</title>
+
+</head>
+
+<body class = 'container'>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4>
+      <label for="City: ">Please enter your city</label>
+      <input type="text" class="form-control" id="myCity" placeholder="London, UK">
+      <input id = 'submitCity' type='submit' class='btn btn-danger' value='OK'>
+    </h4>
+     <h4>Temp is :<div id='outsideTemp'>  </div> </h4>
+    </div>
+</div>
+
+  <div style="text-align: center" >
+  <h2> Thermostat </h2>
+  <h3> (Centrigrade) </h3>
+  <h1 id = 'output'>links </h1>
+  <br>
+
+  <br>
+  <input id = 'temp_up' type='submit' class='btn btn-success'  value='Temperature Up'>
+
+  <input id = 'temp_down' type='submit' class='btn btn-danger' value='Temperature Down'>
+  <div class="checkbox">
+ <label><input type="checkbox" id = 'powerSave' value="checked" checked>Power Saving Mode</label>
+ <br>
+ <br>
+ <input id = 'reset' type='submit' class='btn btn-warning' value='Reset'>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+  </div>
+  <br>
+  <br>
+  <div style="text-align: center" >
+  <h4 id = 'errors'> No Errors</h4>
+
+</body>
+
+
+</html>
