@@ -16,5 +16,8 @@
     "morgan": "~1.6.1",
     "request": "^2.67.0",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "protractor": "^3.0.0"
   }
 }
