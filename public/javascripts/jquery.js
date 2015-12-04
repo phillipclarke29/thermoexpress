@@ -10,13 +10,12 @@ $(document).ready(function()
       $('#output').css('color', therm.tempColour());
     });
 
-    var updateTemp = (function(data){
-      console.log(therm.temp);
+    var updateTemp = (function(){
       $.ajax({
       url: "http://localhost:3000/temp",
       type: 'POST',
-      data: data,
-      success: function(data){
+      data: {temp: therm.temp},
+      success: function(){
           //callback
       }
       });
