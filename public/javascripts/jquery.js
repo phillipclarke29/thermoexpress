@@ -10,6 +10,21 @@ $(document).ready(function()
       $('#output').css('color', therm.tempColour());
     });
 
+    var updateTemp = (function(data){
+      console.log(therm.temp);
+      $.ajax({
+      url: "http://localhost:3000/temp",
+      type: 'POST',
+      data: data,
+      success: function(data){
+          //callback
+      }
+      });
+    });
+
+
+
+
     displayTemp();
 
     $('#temp_up').click(function() {
@@ -17,12 +32,14 @@ $(document).ready(function()
         therm.increaseByOne();
         console.log(therm.temp);
         displayTemp();
+        updateTemp(therm.temp);
       } catch (e) {
         errorMessage = e.message;
       }
       $('#errors').html(errorMessage);
       errorMessage = 'No errors';
     });
+
 
     $('#temp_down').click(function() {
       try {
