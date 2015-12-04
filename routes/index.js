@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var thermo = require('../models/thermo.js');
+var mongoose   = require('mongoose');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -11,7 +13,7 @@ router.get('/temp', function(req, res, next) {
 });
 
 router.post('/temp', function(req, res, next) {
-  res.send('respond with a resource');
+
 });
 
 module.exports = router;
