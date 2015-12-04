@@ -13,6 +13,11 @@ router.get('/temp', function(req, res, next) {
 });
 
 router.post('/temp', function(req, res, next) {
+  new thermo({temp : req.body.thermo})
+ .save(function(err, thermo) {
+   console.log(thermo)
+   res.redirect('/');
+ });
 
 });
 
