@@ -84,22 +84,22 @@ $(document).ready(function()
       });
     });
 
-    $('#tempsendtosinatra').on('submit', function(event) {
-      event.preventDefault();
-      $.ajax({
-        url: 'temperature.json',
-        dataType: 'json',
-        contentType: 'application/json',
-        type: 'POST',
-        data: JSON.stringify({
-          name: "Dom"
-        }),
-        accepts: "application/json",
-        success: function(json) {
-          alert(json);
-        }
-      })
-    })
+    // $('#tempsendtosinatra').on('submit', function(event) {
+    //   event.preventDefault();
+    //   $.ajax({
+    //     url: 'temperature.json',
+    //     dataType: 'json',
+    //     contentType: 'application/json',
+    //     type: 'POST',
+    //     data: JSON.stringify({
+    //       name: "Dom"
+    //     }),
+    //     accepts: "application/json",
+    //     success: function(json) {
+    //       alert(json);
+    //     }
+    //   })
+    // })
 
   });
 // $('#powerSave').prop('checked', true) {
