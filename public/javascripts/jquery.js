@@ -72,7 +72,7 @@ $(document).ready(function()
         type: 'GET',
         dataType: 'json',
         url: "http://api.openweathermap.org/data/2.5/weather?q=" + $(
-          '#myCity').val(),
+          '#myCity').val() + "&appid=4acd98ae3bf490ab7e3205e133e938aa",
         success: function(data) {
           if (data.cod == 200) {
             $('#outsideTemp').html((data.main.temp.toFixed(0)) -
