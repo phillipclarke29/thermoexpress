@@ -1,6 +1,9 @@
-function Thermo() {
-}
-Thermo.prototype.play = function(song) {
-  this.currentlyPlayingSong = song;
-  this.isPlaying = true;
-};
+angular.module('myApp',[])
+  .controller('ThermostatController', function(){
+    var temp = this;
+      console.log(this.links)
+
+
+
+
+  });

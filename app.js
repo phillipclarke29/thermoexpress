@@ -4,12 +4,19 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var reload = require('reload')
 var routes = require('./routes/index');
-var users = require('./routes/users');
+var users = require('./routes/thermo');
+var thermo = require('./models/thermo.js');
 
 var app = express();
 
+var mongoose   = require('mongoose');
+mongoose.connect('mongodb://admin:alex040898@ds061954.mongolab.com:61954/thermostat');
+
+console.log(thermo)
+
+// console.log(thermo);
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -23,7 +30,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
+app.use('/thermo', thermo);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
