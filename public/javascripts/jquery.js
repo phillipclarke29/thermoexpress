@@ -67,12 +67,11 @@ $(document).ready(function()
       displayTemp();
     });
 
-    $('#submitCity').click(function() {
+    $('#submitCity').ready(function() {
       $.ajax({
         type: 'GET',
         dataType: 'json',
-        url: "http://api.openweathermap.org/data/2.5/weather?q=" + $(
-          '#myCity').val() + "&appid=4acd98ae3bf490ab7e3205e133e938aa",
+        url: "http://api.openweathermap.org/data/2.5/weather?q=stroud&appid=4acd98ae3bf490ab7e3205e133e938aa",
         success: function(data) {
           if (data.cod == 200) {
             $('#outsideTemp').html((data.main.temp.toFixed(0)) -
