@@ -18,7 +18,7 @@ Jasmine tests can be run from the command line at root using open SpecRunner.htm
 
 This is based on Makers Academy Thermostat but updated to use an express server and mongdb to persisted the thermostat state.  Overkill I know but it should be fun.  Maybe a bit of angular for good measure.
 
-I am not planning to have an actually thermostat at the other end but I might take a look at the byzantium system I have at home to see if I can Babb something together.
+I am not planning to have an actually thermostat at the other end but I might take a look at the byzantium system I have at home to see if I can Babb something together.  With this in mind we are at this stage playing with persisting via mongo with a mind to an ultimate solution use particle products
 
 ### Usage
 
